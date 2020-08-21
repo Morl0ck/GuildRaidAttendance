@@ -688,7 +688,7 @@ end
 --------------------------------------------------------
 -- loot distr test
 --------------------------------------------------------
---@debug@
+--[===[@debug@
 SLASH_LOOTDISTRTEST1 = "/ldtest"
 function SlashCmdList.LOOTDISTRTEST(msg, editbox)
     if not gra.isLootMaster then return end
@@ -723,4 +723,4 @@ function SlashCmdList.LOOTDISTRTEST(msg, editbox)
         end
     end
 end
---@end-debug@
+--@end-debug@]===]

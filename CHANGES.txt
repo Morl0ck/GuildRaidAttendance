@@ -1,0 +1,74 @@
+lightweight tag 85c04d2ddc031ac2755256f5689e162bd824c388 r91-release
+Author:	KevinSK <shinozakisama@live.com>
+Date:	Tue Nov 5 06:28:58 2019 +0800
+
+commit 85c04d2ddc031ac2755256f5689e162bd824c388
+Author: KevinSK <shinozakisama@live.com>
+Date:   Tue Nov 5 06:28:58 2019 +0800
+
+    update zhCN
+
+commit 644d4616630d6f4e33d2e3fd2402b9a28c7fcbd4
+Author: KevinSK <shinozakisama@live.com>
+Date:   Tue Nov 5 06:20:10 2019 +0800
+
+    Update ChangeLog
+
+commit e84203560c92be1b1259223f0b514be699c47b17
+Author: KevinSK <shinozakisama@live.com>
+Date:   Tue Nov 5 06:13:41 2019 +0800
+
+    prepare for ArchivedLogs
+
+commit ddb157e65a287454e3af786fcb3618c77febfa1c
+Author: KevinSK <shinozakisama@live.com>
+Date:   Tue Nov 5 06:13:17 2019 +0800
+
+    implement notes/raidhours mass editing
+    
+    Every log will always have startTime and endTime.
+
+commit 81ee61c28d9e49e1207735554517ebbf96adfc47
+Author: KevinSK <shinozakisama@live.com>
+Date:   Tue Nov 5 06:08:16 2019 +0800
+
+    update attendance stuff
+
+commit 68a1878b7894ccec8114f8b2d27f0207b1494877
+Author: KevinSK <shinozakisama@live.com>
+Date:   Tue Nov 5 06:05:50 2019 +0800
+
+    fix typo
+
+commit c6cedba3655bac860af173493b198981d2e37450
+Author: KevinSK <shinozakisama@live.com>
+Date:   Sun Oct 20 20:29:11 2019 +0800
+
+    update CreateRaidHoursEditBox
+
+commit a3a49795e0c89b740448c17e67e5c74a228ce9ee
+Author: KevinSK <shinozakisama@live.com>
+Date:   Sun Oct 20 20:26:57 2019 +0800
+
+    update AttendanceEditor
+
+commit 1eeca9704f67955b00e0ffa475b7468116e5f92f
+Author: KevinSK <shinozakisama@live.com>
+Date:   Sun Oct 20 14:49:57 2019 +0800
+
+    add CreateRaidHoursEditBox function
+    
+    update frame size
+
+commit f0c2bbf7b4f668d17bbd3b5fc2b582a3d0120984
+Author: KevinSK <shinozakisama@live.com>
+Date:   Mon Oct 14 18:17:52 2019 +0800
+
+    fix attendance status
+
+commit 45c01ef3d4b1162f5443a9978c23754e205669b8
+Author: KevinSK <shinozakisama@live.com>
+Date:   Mon Oct 14 15:22:04 2019 +0800
+
+    update DatePicker
+

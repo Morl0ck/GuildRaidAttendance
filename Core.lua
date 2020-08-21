@@ -4,9 +4,9 @@ local GRA, gra = {}, {}
 E[1] = GRA -- functions
 E[2] = gra -- global variables, frames...
 
---@debug@
+--[===[@debug@
 local debugMode = true
---@end-debug@
+--@end-debug@]===]
 function GRA:Debug(arg, ...)
 	if debugMode then
 		if type(arg) == "string" or type(arg) == "number" then
@@ -427,7 +427,7 @@ function SlashCmdList.GUILDRAIDATTENDANCE(msg, editbox)
 		-- TODO: 
 	elseif command == "loot" then
 		gra.distributionFrame:Show()
-	--@debug@
+	--[===[@debug@
 	elseif command == "testPopup" then
 		if rest == "receivePopup" then
 			local class = select(2, UnitClass("player"))
@@ -452,7 +452,7 @@ function SlashCmdList.GUILDRAIDATTENDANCE(msg, editbox)
 		GRA_FONT_TEXT:SetFont(GRA_FONT_TEXT:GetFont(), rest or 11)
 	elseif command == "test" then
 		texplore(GRA:GetPlayersInRaid())
-	--@end-debug@
+	--@end-debug@]===]
 	else
 		GRA:Print(gra.colors.firebrick.s .. "Unknown command.")
 	end

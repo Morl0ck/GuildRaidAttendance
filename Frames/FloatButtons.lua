@@ -190,7 +190,7 @@ end)
 -----------------------------------------
 -- test
 -----------------------------------------
---@debug@
+--[===[@debug@
 SLASH_FLOATBTNTEST1 = "/fbtest"
 function SlashCmdList.FLOATBTNTEST(msg, editbox)
     for i = 1, 3 do
@@ -201,4 +201,4 @@ function SlashCmdList.FLOATBTNTEST(msg, editbox)
         CreateBossButton(i)
     end
 end
---@end-debug@
+--@end-debug@]===]

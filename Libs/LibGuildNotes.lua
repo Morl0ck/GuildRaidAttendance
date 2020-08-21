@@ -7,9 +7,9 @@ local lib = LibStub:NewLibrary("LibGuildNotes", "1.0")
 if not lib then return end
 
 lib.callbacks = lib.callbacks or LibStub("CallbackHandler-1.0"):New(lib)
---@debug@
+--[===[@debug@
 local debug = true
---@end-debug@
+--@end-debug@]===]
 local function Print(msg, f)
 	if debug then
 		if f then

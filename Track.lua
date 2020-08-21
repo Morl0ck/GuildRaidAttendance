@@ -11,8 +11,28 @@ local encounterInfo = {}
 local function RaidRosterUpdate()
 	-- 意外删除了刚刚创建的记录，再次询问
 	if not _G[GRA_R_RaidLogs][raidDate] then GRA:StartTracking() return end
-
+	
 	local updateNeeded = false
+	
+	-- onBench by rank
+	for i=1,GetNumGuildMembers() do
+		local playerName, _, rankIndex, _, _, _, _, _, online = GetGuildRosterInfo(i)
+		if rankIndex <= 6 -- check their rank, 6 in this case is Raider Alt
+			and _G[GRA_R_Roster][playerName] -- make sure they're on the roster
+			and _G[GRA_R_RaidLogs][raidDate]["attendances"][playerName] -- make sure they're on the attendance for the raidDate
+			and online then -- make sure they're online
+
+			if not _G[GRA_R_RaidLogs][raidDate]["attendances"][playerName][3] then
+				-- if they haven't "joined" yet
+				local joinTime = time()
+				_G[GRA_R_RaidLogs][raidDate]["attendances"][playerName][1] = GRA:CheckAttendanceStatus(joinTime, select(2, GRA:GetRaidStartTime(raidDate)))
+				_G[GRA_R_RaidLogs][raidDate]["attendances"][playerName][3] = joinTime
+				_G[GRA_R_RaidLogs][raidDate]["attendances"][playerName][5] = true
+				updateNeeded = true
+			end
+		end
+	end
+
 	-- joinTime
 	local n = GetNumGroupMembers("LE_PARTY_CATEGORY_HOME")
 	for i = 1, n do

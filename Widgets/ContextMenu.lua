@@ -112,7 +112,7 @@ end
 ------------------------------------------------
 -- test
 ------------------------------------------------
---@debug@
+--[===[@debug@
 SLASH_CONTEXTMENUTEST1 = "/cmtest"
 function SlashCmdList.CONTEXTMENUTEST(msg, editbox)
 	local items = {}
@@ -146,4 +146,4 @@ function SlashCmdList.CONTEXTMENUTEST(msg, editbox)
 	-- 	last = row
 	-- end
 end
---@end-debug@
+--@end-debug@]===]
